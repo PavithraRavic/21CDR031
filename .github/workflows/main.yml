@@ -3,16 +3,14 @@ name: Hello
 on: push
 
 jobs:
-
-hello:
-
-runs-on: ubuntu-latest
-steps:
-  - name: Print HAI
-    run: echo "HAi"
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print HAI
+        run: echo "HAi"
   
-  - name: Create a file
-    run: touch new.txt
+      - name: Create a file
+        run: touch new.txt
 
-  - name: List all directories again
-    run: ls
+      - name: List all directories again
+        run: ls
